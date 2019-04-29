@@ -1,0 +1,15 @@
+{
+  "short_name": "諸説あるお絵描き",
+  "name": "諸説あるお絵描き",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f4a6ff",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,29 @@
+.searchbox-container {
+    display: flex;
+    width: 100%;
+}
+
+.searchbox-container input {
+    width: 100%;
+    outline: 0;
+    border-radius: 0;
+    padding: 0.3em;
+    /* フォントサイズ16pxより小さいとiPhoneでズームしてしまう */
+    font-size: 18px;
+    margin: 0;
+    border: none;
+    border: 1px solid lightgray;
+    box-shadow: none;
+    /* iPhoneの影を消す */
+    -webkit-appearance: none; 
+}
+
+.searchbox-container button {
+    background: #efefef;
+    padding: 0.3em 1em;
+    margin: 0;
+    border: 1px solid lightgray;
+    border-left: 0;
+    border-radius: 0;
+    font-size: 18px;
+}

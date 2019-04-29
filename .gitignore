@@ -1,0 +1,6 @@
+.vscode/
+
+web/node_modules
+web/build
+
+run.ps1

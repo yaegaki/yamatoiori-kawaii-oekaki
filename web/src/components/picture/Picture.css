@@ -1,0 +1,33 @@
+.picture .pic {
+    display: block;
+    margin: 1em auto;
+}
+
+.picture .info {
+    width: 300px;
+    margin: auto;
+}
+
+.picture .info .answer {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.picture .info .tag {
+    text-align: center;
+    color: gray;
+}
+
+.picture form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.delete {
+    background: #ff6060;
+}
+
+.picture .pic {
+    max-width: 300px;
+    max-height: 300px;
+}

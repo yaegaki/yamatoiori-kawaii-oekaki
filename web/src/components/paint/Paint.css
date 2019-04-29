@@ -1,0 +1,86 @@
+:root {
+    --tool-box-width: 200px;
+}
+
+.main-canvas-with-tool {
+    display: grid;
+}
+
+.main-canvas-with-tool.tool-box-right {
+    grid-template-columns: auto var(--tool-box-width);
+}
+
+.main-canvas-with-tool.tool-box-left {
+    grid-template-columns: var(--tool-box-width) auto;
+}
+
+.main-canvas-with-tool .canvas-container {
+    overflow: hidden;
+}
+
+.main-canvas-with-tool .menu-buttons {
+    display: none;
+    pointer-events: none;
+}
+
+.main-canvas-with-tool .menu-buttons button {
+    pointer-events: auto;
+}
+
+@media screen and (max-width:700px) { 
+    .main-canvas-with-tool.tool-box-right {
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .main-canvas-with-tool.tool-box-right .paint-grid-1 {
+        grid-row: 1 / 4;
+        /* 全画面化 */
+        grid-column: 1 / 3;
+    }
+
+    .main-canvas-with-tool.tool-box-right .paint-grid-2 {
+        grid-row: 1;
+        /* Canvasにオーバーラップさせる */
+        grid-column: 2 / 3;
+        z-index: 2;
+    }
+
+    .main-canvas-with-tool .menu-buttons {
+        display: block;
+        grid-row: 3;
+        grid-column: 1 / 3;
+        z-index: 2;
+        padding: 15px;
+    }
+
+    .main-canvas-with-tool .menu-buttons button {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: #0000006e;
+    }
+
+    .main-canvas-with-tool .menu-buttons button:disabled {
+        background: #00000036;
+    }
+}
+
+.ReactModalPortal .ReactModal__Content .pic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.ReactModalPortal .ReactModal__Content .paint-modal-field {
+    margin: .5em 0;
+    font-size: 18px;
+}
+
+.ReactModalPortal .ReactModal__Content .paint-modal-field .input-text {
+    display: block;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0 0 0.1em 0.2em;
+    font-size: 17px;
+}

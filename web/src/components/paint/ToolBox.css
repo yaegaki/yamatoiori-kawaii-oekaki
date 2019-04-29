@@ -1,0 +1,42 @@
+.toolbox {
+    background: white;
+    height: 100%;
+    border-left: 1px solid gray;
+}
+
+.toolbox h3 {
+    padding-top: .2em;
+    padding-left: .2em;
+}
+
+.toolbox.hide {
+    display: none;
+}
+
+.toolbox .mini-map-container {
+    background: gray;
+}
+
+.toolbox .mini-map {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.toolbox .canvas-container {
+    position: absolute;
+}
+
+.toolbox .show-rect {
+    position: absolute;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:700px) { 
+    .toolbox .toolbox-menu {
+        display: none;
+    }
+}

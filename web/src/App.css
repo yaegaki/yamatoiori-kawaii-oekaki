@@ -1,0 +1,120 @@
+:root {
+    --icon-color: #f4a6ff;;
+    --icon-active-color: #5cb0ff;
+    --menu-main-color: #f4a6ff;
+    --menu-font-color: #4c4c4c;
+    --chart-main-color: #a6f0ff;
+    --chart-main-strong-color: #5cb0ff;
+    --chart-sub-color: #f4a6ff;
+    --chart-sub-strong-color: #e94eff;
+}
+
+html {
+    height: 100%;
+    touch-action: manipulation;
+    -webkit-touch-action: manipulation;
+}
+
+body {
+    background: #f7f7f7;
+    height: 100%;
+}
+
+h3 {
+    margin: 0;
+}
+
+input, button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    background: #a4f1ff;
+    margin: .2em;
+    border-radius: 20px;
+    font-size: .9em;
+    padding: .5em .8em;
+    color: #101010;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+button:disabled {
+    background: #caf7ff;
+    color: #c2c2c2;
+}
+
+.expand-height {
+    height: 100%;
+}
+
+.App {
+    display: grid;
+    /* TopBarとコンテンツで画面全体になるようにする */
+    grid-template-rows: auto 1fr;
+}
+
+.App.topbar-hidden {
+    grid-template-rows: 0 1fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #26a4ff;
+}
+
+h2 {
+    border-bottom: 1px solid #eee;
+}
+
+img, canvas {
+    vertical-align: bottom;
+}
+
+img.pic {
+    border: 2px solid #c8c8c8;
+}
+
+.content-container {
+    box-shadow: 0 0 5px rgba(0,0,0,.26);
+    background: white;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    z-index: 5;
+    background-color: rgba(0,0,0,.5)!important;
+}
+
+.ReactModalPortal .ReactModal__Content {
+    position: relative;
+    top: 50%!important;
+    left: 50%!important;
+    right: auto!important;
+    bottom: auto!important;
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+}
+
+.ReactModalPortal .ReactModal__Content .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5em;
+}
+
+.share-button {
+    display: flex;
+    justify-content: flex-end;
+}
