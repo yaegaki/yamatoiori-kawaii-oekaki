@@ -1,0 +1,34 @@
+.ekakiuta .lyric-list {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.ekakiuta .lyric {
+    font-size: 1.2em;
+    margin-top: 0;
+    background: #f3f3f3;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.ekakiuta .answer-header {
+    font-size: 1.2em;
+}
+
+.ekakiuta .vivus-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.ekakiuta .answer {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ekakiuta .answer-title {
+    padding: .1em;
+    font-size: 1.3em;
+    text-align: center;
+}

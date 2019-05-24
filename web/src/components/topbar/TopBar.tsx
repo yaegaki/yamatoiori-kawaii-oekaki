@@ -8,6 +8,7 @@ export class TopBar extends Component {
             <TopBarButton path="/" icon="home" text="Home"/>
             <TopBarButton path="/paint" icon="pen" text="Paint"/>
             <TopBarButton path="/list" icon="image" text="List"/>
+            <TopBarButton path="/history" icon="calendar-alt" text="History"/>
         </section>;
     }
 }

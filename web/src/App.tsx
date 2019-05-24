@@ -3,15 +3,17 @@ import { Switch, BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import { TopBar } from './components/topbar/TopBar';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faPen, faBars, faEraser, faImage, faRedo, faUndo, faSearch, faBomb, faCircleNotch } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faPen, faBars, faEraser, faImage, faRedo, faUndo, faSearch, faBomb, faCircleNotch, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { Paint } from './components/paint/Paint';
 import { List } from './components/list/List';
 import { AppContext, AppContextValue } from './AppContext';
 import ReactModal from 'react-modal';
 import { Picture } from './components/picture/Picture';
 import { Home } from './components/home/Home';
+import { History } from './components/history/History';
+import { Article } from './components/history/Article';
 
-library.add(faHome, faImage, faSearch, faPen, faEraser, faBars, faRedo, faUndo, faBomb, faCircleNotch);
+library.add(faHome, faImage, faSearch, faPen, faEraser, faBars, faRedo, faUndo, faBomb, faCircleNotch, faCalendarAlt);
 ReactModal.setAppElement('#root');
 
 type AppState = {
@@ -41,6 +43,8 @@ class App extends Component<{}, AppState> {
                                 <Route path="/" exact={true} component={Home} />
                                 <Route path="/paint" exact={true} component={Paint} />
                                 <Route path="/list" exact={true} component={List} />
+                                <Route path="/history" exact={true} component={History} />
+                                <Route path="/history/:id" exact={true} component={Article} />
                                 <Route path="/p/:id" exact={true} component={Picture} />
                                 <Route path="/" render={() => {
                                     return <div>not found.</div>;

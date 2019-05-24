@@ -20,6 +20,11 @@ body {
     height: 100%;
 }
 
+h2 {
+    border-bottom: 1px solid #eee;
+    margin-bottom: .2em;
+}
+
 h3 {
     margin: 0;
 }
@@ -76,10 +81,6 @@ a:link {
     color: #26a4ff;
 }
 
-h2 {
-    border-bottom: 1px solid #eee;
-}
-
 img, canvas {
     vertical-align: bottom;
 }
@@ -117,4 +118,10 @@ img.pic {
 .share-button {
     display: flex;
     justify-content: flex-end;
+}
+
+.common-content-body {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1em 1em 1em;
 }

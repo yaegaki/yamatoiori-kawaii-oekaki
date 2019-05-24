@@ -5,7 +5,7 @@ import './Home.css';
 
 export class Home extends Component {
     render() {
-        return <div className="home-top">
+        return <div className="home-top common-content-body">
             {this.renderAbout()}
             {this.renderContentDescription()}
             {this.renderHowToUse()}

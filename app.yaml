@@ -23,7 +23,7 @@ handlers:
   script: auto
   secure: always
 
-- url: /(.*\.(gif|png|jpeg|jpg|css|js|ico|json))$
+- url: /(.*\.(gif|png|jpeg|jpg|css|js|ico|json|svg))$
   static_files: web/build/\1
   upload: web/build/(.*)
   secure: always
